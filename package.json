@@ -1,6 +1,6 @@
 {
   "name": "portfolio-react",
-  "homepage": "https://Dhruv9916.github.io/Portfolio-Website/",
+
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,10 +8,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy" : "gh-pages -d dist"
-
+    "preview": "vite preview"
+  
   },
   "dependencies": {
     "clsx": "^2.1.0",
