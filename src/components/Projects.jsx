@@ -1,30 +1,31 @@
-import { motion } from 'framer-motion';
-import Slider from 'react-slick';
+import { motion } from "framer-motion";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const projects = [
   {
     title: "Crypto-Tracker-Using-React",
-    image: "/images/crypto.png",
+    image: "./images/crypto.png",
     demoLink: "https://crypto-currency-tracker-by-dhruv.netlify.app/",
     githubLink: "https://github.com/Dhruv9916/Crypto-Tracker-Using-React",
-    tech: "React.js, Material Ui, Framer Motion"
+    tech: "React.js, Material Ui, Framer Motion",
   },
   {
     title: "Tech-Hire-Job-Portal-Using-React",
-    image: "/images/Techhire.png",
+    image: "./images/Techhire.png",
     demoLink: "https://tech-hire-job-portal-using-react.vercel.app/",
-    githubLink: "https://github.com/Dhruv9916/Tech-Hire-Job-Portal-Using-React-",
-    tech: "React.js, Clerk, Supabase"
+    githubLink:
+      "https://github.com/Dhruv9916/Tech-Hire-Job-Portal-Using-React-",
+    tech: "React.js, Clerk, Supabase",
   },
   {
     title: "CountDown-Timer-Using-React",
-    image: "/images/timer.png",
+    image: "./images/timer.png",
     demoLink: "https://countdown-timer-by-dhruv.netlify.app/",
     githubLink: "https://github.com/Dhruv9916/CountDown-Timer-Using-React",
-    tech: "React.js"
-  }
+    tech: "React.js",
+  },
 ];
 
 const Projects = () => {
@@ -41,23 +42,23 @@ const Projects = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
-        }
+          slidesToScroll: 1,
+        },
       },
       {
         breakpoint: 640,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
     <section id="projects" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.h2 
+        <motion.h2
           className="text-4xl font-bold text-center mb-16 relative"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -79,20 +80,22 @@ const Projects = () => {
             >
               <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg">
                 <a href={project.demoLink} target="_blank" rel="noreferrer">
-                  <img 
-                    src={project.image} 
+                  <img
+                    src={project.image}
                     alt={project.title}
                     className="w-full h-48 object-cover hover:opacity-80 transition-opacity"
                   />
                 </a>
                 <div className="p-6">
-                  <a 
-                    href={project.githubLink} 
-                    target="_blank" 
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
                     rel="noreferrer"
                     className="text-white hover:text-crimson transition-colors"
                   >
-                    <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                    <h3 className="text-xl font-semibold mb-2">
+                      {project.title}
+                    </h3>
                   </a>
                   <p className="text-gray-400">{project.tech}</p>
                 </div>

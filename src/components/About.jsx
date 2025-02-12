@@ -24,7 +24,7 @@ const About = () => {
             className="space-y-6"
           >
             <img
-              src="/images/profile.jpg" // Correct path
+              src="../images/profile.jpg" // Correct path
               alt="Dhruv Kumar"
               className="w-80 h-80 rounded-full mx-auto object-cover shadow-xl"
             />
@@ -76,7 +76,7 @@ const About = () => {
                 className="flex flex-col items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
               >
                 <img
-                  src="/images/resume.png" // Correct path
+                  src="../images/resume.png" // Correct path
                   alt="Resume"
                   className="w-16 h-16 mb-2"
                 />
@@ -89,7 +89,7 @@ const About = () => {
                 className="flex flex-col items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
               >
                 <img
-                  src="/images/leet.png" // Correct path
+                  src="../images/leet.png" // Correct path
                   alt="LeetCode"
                   className="w-16 h-16 mb-2"
                 />
@@ -102,7 +102,7 @@ const About = () => {
                 className="flex flex-col items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
               >
                 <img
-                  src="/images/github.png" // Correct path
+                  src="../images/github.png" // Correct path
                   alt="GitHub"
                   className="w-16 h-16 mb-2"
                 />
